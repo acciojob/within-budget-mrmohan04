@@ -11,7 +11,9 @@ const App = () => {
 
 export default App;
 
-// function to filter items within budget
-export function withinBudget(purchases, budget) {
-  return purchases.filter(item => item.price <= budget);
+// Function to check if purchases are within budget
+function withinBudget(purchases, budget) {
+  return purchases.filter(purchase => purchase.price <= budget);
 }
+
+export { withinBudget };
